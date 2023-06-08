@@ -30,11 +30,18 @@ public enum DefaultMessage implements MessageIdentifier {
 	COMMAND_POLL_STOP_INVALID_POLL("command.poll.stop.invalid-poll", Color.RED, "A poll with that ID doesn't exist"),
 	COMMAND_POLL_STOP_SUCCESS("command.poll.stop.success", Color.GREEN, "The poll has been stopped"),
 	
+<<<<<<< HEAD
 	COMMAND_REMINDER_CREATE_DURATION_TOO_SHORT("command.reminder.create.duration-too-short", Color.RED, "The reminder can only repeat at a minimum of every 5 minutes"),
 	COMMAND_REMINDER_CREATE_SUCCESS("command.reminder.create.success", Color.GREEN, "Your reminder got successfully enqueued!"),
 	COMMAND_REMINDER_CREATE_EVENT_IS_IN_THE_PAST("command.reminder.create.event-is-in-the-past", Color.RED, "The reminder you tried to enqueue is in the past!"),
 	COMMAND_REMINDER_LIST_NO_REMINDERS("command.reminder.list.no-reminder", Color.RED, "Currently there are no reminders active"),
 	COMMAND_REMINDER_REMOVE_INVALID_REMINDER("command.reminder.remove.invalid-poll", Color.RED, "A reminder with that ID doesn't exist"),
+=======
+	COMMAND_REMINDER_CREATE_SUCCESS("command.reminder.create.success", Color.GREEN, "Your reminder was scheduled successfully"),
+	COMMAND_REMINDER_CREATE_EVENT_IS_IN_THE_PAST("command.reminder.create.event-is-in-the-past", Color.RED, "The reminder date is in the past"),
+	COMMAND_REMINDER_LIST_NO_REMINDERS("command.reminder.list.no-reminders", Color.RED, "Currently there are no reminders active"),
+	COMMAND_REMINDER_INVALID_REMINDER("command.reminder.invalid-reminder", Color.RED, "A reminder with that ID doesn't exist"),
+>>>>>>> branch 'master' of https://github.com/TheArrayser/Graphite.git
 	COMMAND_REMINDER_REMOVE_SUCCESS("command.reminder.remove.success", Color.GREEN, "The reminder has been removed"),
 	
 	COMMAND_TEMPBAN_SUCCESS("command.tempban.success", Color.GREEN, "Banned {user} for {duration}: `{reason}`"),
@@ -322,6 +329,9 @@ public enum DefaultMessage implements MessageIdentifier {
 	
 	COMMAND_TEXTCOMMANDS_ENABLE_MESSAGE("command.textcommands.enable.message", Color.GREEN, "Enabled text-based commands (Prefix: `{prefix}`)"),
 	COMMAND_TEXTCOMMANDS_DISABLE_MESSAGE("command.textcommands.disable.message", Color.RED, "Disabled text-based commands"),
+	
+	COMMAND_TIMEZONE_INVALID_TIMEZONE("command.timezone.invalid-timezone", Color.RED, "Invalid timezone"),
+	COMMAND_TIMEZONE_MESSAGE("command.timezone.message", Color.GREEN, "Successfully set the timezone of your server to `{timezone}`"),
 	
 	MINIGAME_WON("minigame.won", Color.GREEN, "You won and earned `{money}`{emote_dollaronen} :tada:"),
 	MINIGAME_LOST("minigame.lost", Color.RED, "You lost :cry:"),

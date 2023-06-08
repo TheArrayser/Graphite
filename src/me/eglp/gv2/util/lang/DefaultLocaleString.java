@@ -127,7 +127,6 @@ public enum DefaultLocaleString implements LocalizedString {
 	COMMAND_COINFLIP_USAGE("command.coinflip.usage", "{prefix}coinflip"),
 	COMMAND_DICE_DESCRIPTION("command.dice.description", "Roll a dice and see what happens"),
 	COMMAND_DICE_USAGE("command.dice.usage", "{prefix}dice"),
-	COMMAND_LOCALE_DESCRIPTION("command.locale.description", "Manage your server locales"),
 	COMMAND_CHUCKNORRIS_DESCRIPTION("command.chucknorris.description", "Chuck Norris knows he is the best"),
 	COMMAND_CHUCKNORRIS_USAGE("command.chucknorris.usage", "{prefix}chucknorris"),
 	COMMAND_8BALL_DESCRIPTION("command.8ball.description", "Ask the magic 8-ball"),
@@ -154,6 +153,7 @@ public enum DefaultLocaleString implements LocalizedString {
 	COMMAND_POLL_STOP_DESCRIPTION("command.poll.stop.description", "Stops a poll"),
 	COMMAND_POLL_STOP_USAGE("command.poll.stop.usage", "{prefix}poll stop"),
 	
+<<<<<<< HEAD
 	
 	COMMAND_REMINDER_DESCRIPTION("command.reminder.description", "Create reminder"),
 	COMMAND_REMINDER_CREATE_DESCRIPTION("command.reminder.create.description", "Create a new reminder"),
@@ -168,6 +168,29 @@ public enum DefaultLocaleString implements LocalizedString {
 	COMMAND_REMINDER_LIST_EMBED_MESSAGE("command.reminder.list.embed.message", "Message:"),
 	COMMAND_REMINDER_REMOVE_DESCRIPTION("command.reminder.remove.description", "Removes a reminder"),
 	COMMAND_REMINDER_REMOVE_USAGE("command.reminder.remove.usage", "{prefix}reminder remove"),
+=======
+	COMMAND_REMINDER_DESCRIPTION("command.reminder.description", "Create reminders so you don't miss important events"),
+	COMMAND_REMINDER_CREATE_DESCRIPTION("command.reminder.create.description", "Create a new reminder"),
+	COMMAND_REMINDER_CREATE_USAGE("command.reminder.create.usage", "{prefix}reminder create <date_and_time (year-month-day hour:minute e.g.: 2001-01-02 15:01)> <reminder message> [repeat] [channel]"),
+	COMMAND_REMINDER_MESSAGE_TITLE("command.reminder.message.title", "Reminder"),
+	COMMAND_REMINDER_MESSAGE_REPEATING("command.reminder.message.repeating", "{repeat} reminder: {message}"),
+	COMMAND_REMINDER_MESSAGE_REPEATING_FOOTER("command.reminder.message.repeating-footer", "To remove this reminder, use /reminder remove reminder:{reminder_id}"),
+	COMMAND_REMINDER_MESSAGE_ONE_TIME("command.reminder.message.one-time", "One-time reminder: {message}"),
+	COMMAND_REMINDER_LIST_DESCRIPTION("command.reminder.list.description", "Lists all currently active reminders"),
+	COMMAND_REMINDER_LIST_USAGE("command.reminder.list.usage", "{prefix}reminder list"),
+	COMMAND_REMINDER_LIST_EMBED_TITLE("command.reminder.list.embed.title", "Active reminders"),
+	COMMAND_REMINDER_LIST_EMBED_DESCRIPTION("command.reminder.list.embed.description", "Currently active reminders by channel:"),
+	COMMAND_REMINDER_REMOVE_DESCRIPTION("command.reminder.remove.description", "Removes a reminder"),
+	COMMAND_REMINDER_REMOVE_USAGE("command.reminder.remove.usage", "{prefix}reminder remove <id>"),
+	COMMAND_REMINDER_INFO_DESCRIPTION("command.reminder.info.description", "Shows information about a reminder"),
+	COMMAND_REMINDER_INFO_USAGE("command.reminder.info.usage", "{prefix}reminder info <id>"),
+	COMMAND_REMINDER_INFO_TITLE("command.reminder.info.title", "Reminder {reminder_id}"),
+	COMMAND_REMINDER_INFO_MESSAGE_TITLE("command.reminder.info.repeat.title", "Message"),
+	COMMAND_REMINDER_INFO_DATE_TITLE("command.reminder.info.date.title", "Date"),
+	COMMAND_REMINDER_INFO_REPEAT_TITLE("command.reminder.info.repeat.title", "Repeat"),
+	COMMAND_REMINDER_INFO_REPEAT_NEVER("command.reminder.info.repeat.never", "Never"),
+	COMMAND_REMINDER_INFO_CHANNEL_TITLE("command.reminder.info.channel.title", "Channel"),
+>>>>>>> branch 'master' of https://github.com/TheArrayser/Graphite.git
 	/*FUN MESSAGES*/
 	
 	/*INFO MESSAGES*/
@@ -542,6 +565,8 @@ public enum DefaultLocaleString implements LocalizedString {
 	COMMAND_EASTEREGGS_MYSTERY_TITLE("command.eastereggs.mystery.title", "???"),
 	COMMAND_EASTEREGGS_MYSTERY_VALUE("command.eastereggs.mystery.value", "Who knows? It's a mystery"),
 	COMMAND_EASTEREGGS_MYSTERY_FOOTER("command.eastereggs.mystery.footer", "You have found {amount} of {total_amount} easter eggs\nNote: Some easter eggs may only be available when using [Graphite]({multiplex_url})"),
+
+	COMMAND_LOCALE_DESCRIPTION("command.locale.description", "Manage your server locales"),
 	
 	COMMAND_LOCALE_LIST_DESCRIPTION("command.locale.list.description", "Lists all available locales"),
 	COMMAND_LOCALE_LIST_USAGE("command.locale.list.usage", "{prefix}locale list"),
@@ -665,6 +690,12 @@ public enum DefaultLocaleString implements LocalizedString {
 	COMMAND_TEXTCOMMANDS_ENABLE_USAGE("command.textcommands.enable.usage", "{prefix}textcommands enable"),
 	COMMAND_TEXTCOMMANDS_DISABLE_DESCRIPTION("command.textcommands.disable.description", "Disable text-based commands"),
 	COMMAND_TEXTCOMMANDS_DISABLE_USAGE("command.textcommands.disable.usage", "{prefix}textcommands disable"),
+	
+	COMMAND_UPDATESLASHCOMMANDS_DESCRIPTION("command.updateslashcommands.description", "Update slash commands on your server. Useful if e.g. a CustomCommand doesn't automatically appear"),
+	COMMAND_UPDATESLASHCOMMANDS_USAGE("command.updateslashcommands.usage", "{prefix}updateslashcommands"),
+	
+	COMMAND_TIMEZONE_DESCRIPTION("command.timezone.description", "Change your server's timezone"),
+	COMMAND_TIMEZONE_USAGE("command.timezone.usage", "{prefix}timezone <timezone>"),
 	
 	MINIGAME_MINESWEEPER_NAME("minigame.minesweeper.name", "Minesweeper"),
 	MINIGAME_CONNECT_FOUR_NAME("minigame.connect-four.name", "Connect Four"),
